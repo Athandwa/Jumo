@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+    <link rel="stylesheet" href="jumo.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h1>Jumo</h1></center>
+        <center>
+            <script id="areaDrop" type="text/handlebars-x">
+                <select>
+                {{#each dropDownArea}}
+                  <option value={{area}}>{{area}}</option>
+                  {{/each}}
+                </select>
+            </script>
+            <div class="dropDisplay">
+            </div>
+
+            <div class="income">
+                Income: R<input type="text" name="" value="" placeholder="Type Income">
+            </div>
+
+              <button type="button" class="subButn">Submit</button>
+
+            <div>
+                <div class="trans">
+                    <img src="trans.jpg" width="100px"> Taxi: R<input type="text"> Petrol: R<input type="text"> Train: R<input type="text">
+                </div>
+
+                <div class="house">
+                    <img src="house.jpg" width="100px"> Food: R<input type="text"> Electricity: R<input type="text"> Water: R<input type="text">
+                </div>
+
+                <div class="enter">
+                    <img src="entertainment.jpg" width="100px"> Movies: R<input type="text"> Sport: R<input type="text"> Restuarant: R<input type="text">
+                </div>
+
+                <div class="edu">
+                    <img src="education.png" width="100px"> Primary school: R<input type="text"> High School<input type="text"> Univarsty: R<input type="text">
+                </div>
+
+                <div class="button">
+                  <button type="button" name="button">Next</button>
+                </div>
+
+
+            </div>
+    </div>
+</body>
+<script src="jumoData.js"></script>
+<script src="main.js"></script>
+
+</html>
